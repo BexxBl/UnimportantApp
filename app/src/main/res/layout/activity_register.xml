@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new"
+    android:padding="20dp"
+    tools:context="com.webgalaxie.blischke.bachelortakeone.Register">
+
+    <TextView
+        android:id="@+id/app_name_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/register_text" />
+
+    <TextView
+        android:id="@+id/username_text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_text"
+        android:layout_alignStart="@+id/register_text"
+        android:layout_below="@+id/register_text"
+        android:layout_marginTop="14dp"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/usernameInputRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_text_register"
+        android:layout_below="@+id/username_text_register"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailtextRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameInputRegister"
+        android:layout_alignStart="@+id/usernameInputRegister"
+        android:layout_below="@+id/usernameInputRegister"
+        android:layout_marginTop="14dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/emailInputRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailtextRegister"
+        android:layout_alignStart="@+id/emailtextRegister"
+        android:layout_below="@+id/emailtextRegister"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/passwordTextRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailInputRegister"
+        android:layout_alignStart="@+id/emailInputRegister"
+        android:layout_below="@+id/emailInputRegister"
+        android:layout_marginTop="12dp"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/passwordInputregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordTextRegister"
+        android:layout_alignStart="@+id/passwordTextRegister"
+        android:layout_below="@+id/passwordTextRegister"
+        android:ems="10"
+        android:hint="@string/pw_placeholder"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerBTN"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/passwordInputregister"
+        android:layout_alignLeft="@+id/passwordInputregister"
+        android:layout_alignRight="@+id/passwordInputregister"
+        android:layout_alignStart="@+id/passwordInputregister"
+        android:layout_below="@+id/passwordInputregister"
+        android:text="@string/register" />
+
+    <TextView
+        android:id="@+id/back_to_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerBTN"
+        android:layout_alignStart="@+id/registerBTN"
+        android:layout_below="@+id/registerBTN"
+        android:layout_marginTop="20dp"
+        android:text="@string/back_to_login"
+        android:textSize="10sp" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Immo Exposé</string>
+    <string name="welcome"> Herzlich Willkommen bei: </string>
+    <string name="project_of"> Ein Projekt von:</string>
+    <string name="login"> Login</string>
+    <string name="logout"> Logout</string>
+    <string name="register"> Registrieren</string>
+    <string name="login_text"> Bitte loggen Sie sich ein, um alle Vorzüge dieser App nutzen zu können.</string>
+    <string name="no_account"> Sie haben noch keinen Account? Dann registrieren Sie sich hier! </string>
+    <string name="register_text"> Bitte registrieren Sie sich hier um alle Vorzüge der App "My Immo Expose" nutzen zu können.</string>
+    <string name="back_to_login"> Sie besitzen schon einen Account?! Dann klicken Sie hier um zurück zum Login zugelangen.</string>
+    <string name="email"> Email</string>
+    <string name="email_hint"> example@example.com</string>
+    <string name="username"> Username</string>
+    <string name="username_hint"> Max Mustermann </string>
+    <string name="password"> Passwort</string>
+    <string name="pw_placeholder"> **********</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Einstellungen</string>
+</resources>
