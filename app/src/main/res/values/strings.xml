@@ -13,8 +13,9 @@
     <string name="email_hint"> example@example.com</string>
     <string name="username"> Username</string>
     <string name="username_hint"> Max Mustermann </string>
-    <string name="password"> Passwort</string>
+    <string name="password"> Enter Passwort</string>
     <string name="pw_placeholder"> **********</string>
+    <string name="password_confirm">Confirm Passwort</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
