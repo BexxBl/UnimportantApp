@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/cardviewImage"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/cardviewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cardviewAdress"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/cardviewAdress"
+                android:text="@string/expose_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cardviewAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cardviewImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/expose_adress"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/cardViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cardview_erstellt"
+                android:layout_alignLeft="@+id/cardviewTitle"
+                android:layout_alignStart="@+id/cardviewTitle"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/expose_status"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cardview_erstellt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cardviewAdress"
+                android:layout_alignLeft="@+id/cardviewAdress"
+                android:layout_alignStart="@+id/cardviewAdress"
+                android:text="@string/erstellt_am"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/cardviewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cardview_erstellt"
+                android:layout_alignBottom="@+id/cardview_erstellt"
+                android:layout_toEndOf="@+id/cardviewTitle"
+                android:layout_toRightOf="@+id/cardviewTitle"
+                android:text="@string/expose_date" />
+
+            <TextView
+                android:id="@+id/cardviewIDText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/cardviewID"
+                android:layout_toStartOf="@+id/cardviewID"
+                android:text="@string/expose_id_text" />
+
+            <TextView
+                android:id="@+id/cardviewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cardviewIDText"
+                android:layout_alignEnd="@+id/cardviewAdress"
+                android:layout_alignRight="@+id/cardviewAdress"
+                android:text="@string/expose_id" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

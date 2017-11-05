@@ -16,7 +16,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.layout_registerscreen);
 
         backtoLogin = findViewById(R.id.backToLogin);
         backtoLogin.setOnClickListener(new View.OnClickListener() {

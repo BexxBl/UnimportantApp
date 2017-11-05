@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -16,13 +17,14 @@ public class LoginScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
+        setContentView(R.layout.layout_login);
 
         loginBTN = findViewById(R.id.loginBTN);
         loginBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Home.class));
+                Toast.makeText(getApplicationContext(), "LOGS USER IN AND STARTS REAL APPLICATION", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
             }
         });
 
